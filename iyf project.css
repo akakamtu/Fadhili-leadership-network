@@ -1,0 +1,211 @@
+/* Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+  }
+  <style>
+p
+</style>
+  
+  h1, h2 {
+    font-weight: bold;
+    color: #00698f;
+  }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 24px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #00698f;
+  }
+  
+  a:hover {
+    color: #00467f;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #02f50e;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  /* Navigation Styles */
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Section Styles */
+  
+  section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    margin-top: 0;
+  }
+  
+  /* Responsive Design */
+  
+  /* Large Screens */
+  
+  @media (min-width: 1200px) {
+    section {
+      width: 80%;
+      margin: 20px auto;
+    }
+  }
+  
+  /* Medium Screens */
+  
+  @media (min-width: 768px) and (max-width: 1199px) {
+    section {
+      width: 90%;
+      margin: 20px auto;
+    }
+  }
+  
+  /* Small Screens */
+  
+  @media (max-width: 767px) {
+    section {
+      width: 100%;
+      margin: 20px;
+    }
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin-bottom: 10px;
+    }
+  }
+
+  a:hover {
+    background-color: rgb(255, 30, 0);
+  }
+
+  .topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.topnav input[type=image] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 25%; /* adjust the width to your liking */
+  margin: 10px; /* add some margin for spacing */
+}
+.carousel-item img {
+  height: 100px;
+  object-fit: cover;
+}
