@@ -10,7 +10,7 @@
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: white;
   }
   <style>
 p
@@ -205,7 +205,98 @@ p
   width: 25%; /* adjust the width to your liking */
   margin: 10px; /* add some margin for spacing */
 }
-.carousel-item img {
-  height: 100px;
-  object-fit: cover;
+.video-section {
+  position: relative;
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto; /* changed from 100% to auto */
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; /* changed from align-items: bottom to flex-end */
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.video-section {
+  position: relative;
+  overflow: hidden; /* added to hide any overflow */
+}
+
+.video-section video {
+  width: 100%;
+  height: 450px;
+  object-fit:scale-down ; 
+  
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: 25%;
+  margin: 20px;
+}
+
+.icon-facebook {
+  font-size: 24px;
+  color: #3b5998;
+}
+
+.icon-twitter {
+  font-size: 24px;
+  color: #1da1f2;
+}
+
+.icon-linkedin {
+  font-size: 24px;
+  color: #0072b1;
+}
+
+.icon-instagram {
+  font-size: 24px;
+  color: #e1306c;
+}
+/* Center the main items horizontally */
+.main-container {
+  text-align: center;
+}
+
+/* Make the main items (folders) display horizontally */
+.folder {
+  display: inline-block;
+  margin: 10px;
+}
+
+/* Make the subnav items (collections) display vertically and absolute positioned */
+.subnav {
+  display: none; /* hide by default */
+  position: absolute;
+  background-color: #020101;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1; /* add this to make the subnav display on top of other contents */
+}
+
+/* Show the subnav on hover */
+.folder:hover .subnav {
+  display: block;
+}
+
+/* Style the links */
+.collection a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #f5f1f1;
+}
+
+.collection a:hover {
+  background-color: #f80707;
 }
