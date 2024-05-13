@@ -12,11 +12,12 @@
     color: #333;
     background-color: white;
   }
-  <style>
+  style{
 p
-</style>
+  }
+style{
   
-  h1, h2 {
+  h1, h2 
     font-weight: bold;
     color: #00698f;
   }
