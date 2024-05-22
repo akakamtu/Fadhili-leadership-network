@@ -301,3 +301,70 @@ style{
 .collection a:hover {
   background-color: #f80707;
 }
+.search-box {
+  position: relative;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 300px;
+  margin: 0;
+}
+
+.search-box button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-right: 1px solid grey;
+  border-radius: 5px 0 0 5px;
+}
+
+.search-box button i {
+  color: grey;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  padding-left: 40px; /* add some padding to make room for the search icon */
+}
+.slide-images {
+  position: relative; /* use absolute positioning for the child elements */
+  height: 100%; /* make the height of the slider equal to the height of the parent container */
+  width: 100%; /* make the width of the slider equal to the width of the parent container */
+  overflow: hidden; /* hide any parts of the images that overflow the container */
+}
+
+.slide-images .img-container {
+  position: absolute; /* use absolute positioning for the images */
+  top: 0; /* align the images at the top of the container */
+  left: 0; /* align the images at the left edge of the container */
+  width: 100%; /* make the images take up the full width of the container */
+  height: 100%; /* make the images take up the full height of the container */
+  animation: slide 30s linear infinite; /* apply the slide animation */
+}
+
+.slide-images .img-container:nth-child(2) {
+  animation-delay: 10s; /* delay the second image by 10 seconds */
+}
+
+.slide-images .img-container:nth-child(3) {
+  animation-delay: 20s; /* delay the third image by 20 seconds */
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 100%; /* move the image to the right edge of the container */
+  }
+  100% {
+    margin-left: -100%; /* move the image to the left edge of the container */
+  }
+}
